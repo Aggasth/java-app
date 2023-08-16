@@ -13,7 +13,7 @@ pipeline {
         stage('Compile') {
             steps {
                 script {
-                    sh 'javac app.java'
+                    sh 'javac App.java'
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline {
         stage('Run') {
             steps {
                 script {
-                    sh 'java app'
+                    sh 'java App'
                 }
             }
         }
